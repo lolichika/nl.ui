@@ -2164,7 +2164,8 @@ local Str = NL.Str
 local Anim   = NL.Anim
 local Icon = NL.Icon
 local Effects = NL.Effects
-
+local Theme = NL.Theme
+local Settings = NL.Settings
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §22 · WINDOW META-TABLE + ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
 --// ═══════════════════════════════════════════════════════════════════════
@@ -4460,6 +4461,8 @@ local Str = NL.Str
 local Icon = NL.Icon
 local Effects = NL.Effects
 local Cache = NL._util.Cache
+local Theme = NL.Theme
+local Settings = NL.Settings
 
 local GroupMethods = NL.GroupMethods
 
@@ -6789,6 +6792,8 @@ local Str = NL.Str
 local Icon = NL.Icon
 local Effects = NL.Effects
 local Cache = NL._util.Cache
+local Theme = NL.Theme
+local Settings = NL.Settings
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §57 · CONFIG · ИНИЦИАЛИЗАЦИЯ + ДЕТЕКТ FS
@@ -8685,6 +8690,8 @@ local Str = NL.Str
 local Icon = NL.Icon
 local Effects = NL.Effects
 local Cache = NL._util.Cache
+local Theme = NL.Theme
+local Settings = NL.Settings
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §76 · FEATURE REGISTRY · ЦЕНТРАЛЬНЫЙ РЕЕСТР
@@ -10485,6 +10492,8 @@ local Str = NL.Str
 local Icon = NL.Icon
 local Effects = NL.Effects
 local Cache = NL._util.Cache
+local Theme = NL.Theme
+local Settings = NL.Settings
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §96 · NOTIFICATION PRIORITY QUEUE
@@ -12234,6 +12243,8 @@ local Icon = NL.Icon
 local Effects = NL.Effects
 local EffectsAdv = NL.EffectsAdv
 local Cache = NL._util.Cache
+local Theme = NL.Theme
+local Settings = NL.Settings
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §120 · LAYOUT MANAGER · ЯДРО
@@ -13718,6 +13729,8 @@ local Icon = NL.Icon
 local Effects = NL.Effects
 local EffectsAdv = NL.EffectsAdv
 local Cache = NL._util.Cache
+local Theme = NL.Theme
+local Settings = NL.Settings
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §141 · UI PRESET SYSTEM · ПОЛНОЕ СОСТОЯНИЕ UI
@@ -15539,6 +15552,8 @@ local Icon = NL.Icon
 local Effects = NL.Effects
 local EffectsAdv = NL.EffectsAdv
 local Cache = NL._util.Cache
+local Theme = NL.Theme
+local Settings = NL.Settings
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §161 · COMMAND PALETTE · ЯДРО

@@ -382,6 +382,8 @@ NL.Version       = __LIBRARY_META.Version
 NL.Build         = __LIBRARY_META.Build
 NL.Meta          = __LIBRARY_META
 NL.Environment   = Environment
+NL.Theme    = Theme
+NL.Settings = Settings
 
 NL.Flags         = {}       -- [flag] = значение
 NL.Elements      = {}       -- реестр всех элементов
@@ -2137,6 +2139,7 @@ do -- ЧАСТЬ 2
 --// Проверка что ядро загружено
 if not NL or not NL._util then
     error("[NL] Часть 1 не загружена. Убедись, что части склеены по порядку.")
+    print("DEBUG NL.Theme =", NL.Theme, "| NL.Settings =", NL.Settings)
 end
 
 -- Локальные ссылки на утилиты (ускорение + чистота кода)
@@ -2257,6 +2260,9 @@ end
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §23 · TOPBAR · ЛОГОТИП + ЮЗЕР-ЧИП + ПОИСК + ВРЕМЯ + ИКОНКИ
 --// ═══════════════════════════════════════════════════════════════════════
+
+local Theme = NL.Theme
+local Settings = NL.Settings
 
 local TopBar = {}
 

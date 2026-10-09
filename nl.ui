@@ -3505,6 +3505,9 @@ local Notify = {
     count = 0,
 }
 
+local Theme = NL.Theme
+local Settings = NL.Settings
+
 local NOTIFY_COLORS = {
     info    = Theme.Accent,
     success = Theme.Success,

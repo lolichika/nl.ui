@@ -568,7 +568,7 @@ end
 --//  §10 · УТИЛИТЫ ЦВЕТА
 --// ═══════════════════════════════════════════════════════════════════════
 
-Color = {}
+local Color = {}
 
 function Color.Lerp(a, b, t)
     if not a or not b then return a or b end
@@ -665,7 +665,7 @@ end
 --//  §11 · УТИЛИТЫ ЧИСЕЛ
 --// ═══════════════════════════════════════════════════════════════════════
 
-Num = {}
+local Num = {}
 
 function Num.Round(x)
     return math.floor(x + 0.5)
@@ -722,7 +722,7 @@ end
 --//  §12 · УТИЛИТЫ СТРОК
 --// ═══════════════════════════════════════════════════════════════════════
 
-Str = {}
+local Str = {}
 
 function Str.Trim(s)
     return (tostring(s or ""):gsub("^%s+", ""):gsub("%s+$", ""))
@@ -1249,7 +1249,7 @@ end
 --//  §18 · БИБЛИОТЕКА ВЕКТОРНЫХ ИКОНОК
 --// ═══════════════════════════════════════════════════════════════════════
 
-Icon = {}
+local Icon = {}
 
 -- залитый примитив
 local function shape(parent, props)
@@ -1851,7 +1851,7 @@ end
 --//  §19 · РАСШИРЕННЫЕ ЭФФЕКТЫ
 --// ═══════════════════════════════════════════════════════════════════════
 
-Effects = {}
+local Effects = {}
 
 -- Ripple-эффект при клике
 function Effects.Ripple(target, color)
@@ -2034,7 +2034,7 @@ end
 --//  §20 · КЭШ И ОПТИМИЗАЦИЯ
 --// ═══════════════════════════════════════════════════════════════════════
 
-Cache = {}
+local Cache = {}
 
 -- viewport size с кэшированием
 function Cache.GetViewport()
@@ -2140,30 +2140,30 @@ if not NL or not NL._util then
 end
 
 -- Локальные ссылки на утилиты (ускорение + чистота кода)
-New = NL._util.New
-Round    = NL._util.Round
-Circle   = NL._util.Circle
-Stroke   = NL._util.Stroke
-Gradient = NL._util.Gradient
-Padding  = NL._util.Padding
-HLayout  = NL._util.HLayout
-VLayout  = NL._util.VLayout
-Tween    = NL._util.Tween
+local New = NL._util.New
+local Round = NL._util.Round
+local Circle = NL._util.Circle
+local Stroke = NL._util.Stroke
+local Gradient = NL._util.Gradient
+local Padding = NL._util.Padding
+local HLayout = NL._util.HLayout
+local VLayout = NL._util.VLayout
+local Tween = NL._util.Tween
 local Label    = NL._util.Label
 local Frame    = NL._util.Frame
 local Spacer   = NL._util.Spacer
-Connect  = NL._util.Connect
-SafeCall = NL._util.SafeCall
-PlaySound = NL._util.PlaySound
+local Connect = NL._util.Connect
+local SafeCall = NL._util.SafeCall
+local PlaySound = NL._util.PlaySound
 local MakeDraggable = NL._util.MakeDraggable
 local MakeResizable = NL._util.MakeResizable
 
-Num    = NL.Num
-Color  = NL.Color
-Str    = NL.Str
+local Num = NL.Num
+local Color = NL.Color
+local Str = NL.Str
 local Anim   = NL.Anim
-Icon   = NL.Icon
-Effects = NL.Effects
+local Icon = NL.Icon
+local Effects = NL.Effects
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §22 · WINDOW META-TABLE + ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
@@ -4439,27 +4439,27 @@ if not NL or not NL._util or not NL.GroupMethods then
 end
 
 -- ссылки на утилиты
-New = NL._util.New
-Round    = NL._util.Round
-Circle   = NL._util.Circle
-Stroke   = NL._util.Stroke
-Gradient = NL._util.Gradient
-Padding  = NL._util.Padding
-HLayout  = NL._util.HLayout
-VLayout  = NL._util.VLayout
-Tween    = NL._util.Tween
-Connect  = NL._util.Connect
-SafeCall = NL._util.SafeCall
-PlaySound = NL._util.PlaySound
+local New = NL._util.New
+local Round = NL._util.Round
+local Circle = NL._util.Circle
+local Stroke = NL._util.Stroke
+local Gradient = NL._util.Gradient
+local Padding = NL._util.Padding
+local HLayout = NL._util.HLayout
+local VLayout = NL._util.VLayout
+local Tween = NL._util.Tween
+local Connect = NL._util.Connect
+local SafeCall = NL._util.SafeCall
+local PlaySound = NL._util.PlaySound
 local BindTooltip = NL._util.BindTooltip
 local HideTooltip = NL._util.HideTooltip
 
-Num    = NL.Num
-Color  = NL.Color
-Str    = NL.Str
-Icon   = NL.Icon
-Effects = NL.Effects
-Cache  = NL._util.Cache
+local Num = NL.Num
+local Color = NL.Color
+local Str = NL.Str
+local Icon = NL.Icon
+local Effects = NL.Effects
+local Cache = NL._util.Cache
 
 local GroupMethods = NL.GroupMethods
 
@@ -6770,25 +6770,25 @@ if not NL or not NL._widgets or not NL.GroupMethods then
 end
 
 -- ссылки
-New = NL._util.New
-Round    = NL._util.Round
-Circle   = NL._util.Circle
-Stroke   = NL._util.Stroke
-Gradient = NL._util.Gradient
-Padding  = NL._util.Padding
-HLayout  = NL._util.HLayout
-VLayout  = NL._util.VLayout
-Tween    = NL._util.Tween
-Connect  = NL._util.Connect
-SafeCall = NL._util.SafeCall
-PlaySound = NL._util.PlaySound
+local New = NL._util.New
+local Round = NL._util.Round
+local Circle = NL._util.Circle
+local Stroke = NL._util.Stroke
+local Gradient = NL._util.Gradient
+local Padding = NL._util.Padding
+local HLayout = NL._util.HLayout
+local VLayout = NL._util.VLayout
+local Tween = NL._util.Tween
+local Connect = NL._util.Connect
+local SafeCall = NL._util.SafeCall
+local PlaySound = NL._util.PlaySound
 
-Num    = NL.Num
-Color  = NL.Color
-Str    = NL.Str
-Icon   = NL.Icon
-Effects = NL.Effects
-Cache  = NL._util.Cache
+local Num = NL.Num
+local Color = NL.Color
+local Str = NL.Str
+local Icon = NL.Icon
+local Effects = NL.Effects
+local Cache = NL._util.Cache
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §57 · CONFIG · ИНИЦИАЛИЗАЦИЯ + ДЕТЕКТ FS
@@ -8666,25 +8666,25 @@ if not NL or not NL._widgets or not NL.Config then
 end
 
 -- ссылки на утилиты
-New = NL._util.New
-Round    = NL._util.Round
-Circle   = NL._util.Circle
-Stroke   = NL._util.Stroke
-Gradient = NL._util.Gradient
-Padding  = NL._util.Padding
-HLayout  = NL._util.HLayout
-VLayout  = NL._util.VLayout
-Tween    = NL._util.Tween
-Connect  = NL._util.Connect
-SafeCall = NL._util.SafeCall
-PlaySound = NL._util.PlaySound
+local New = NL._util.New
+local Round = NL._util.Round
+local Circle = NL._util.Circle
+local Stroke = NL._util.Stroke
+local Gradient = NL._util.Gradient
+local Padding = NL._util.Padding
+local HLayout = NL._util.HLayout
+local VLayout = NL._util.VLayout
+local Tween = NL._util.Tween
+local Connect = NL._util.Connect
+local SafeCall = NL._util.SafeCall
+local PlaySound = NL._util.PlaySound
 
-Num    = NL.Num
-Color  = NL.Color
-Str    = NL.Str
-Icon   = NL.Icon
-Effects = NL.Effects
-Cache  = NL._util.Cache
+local Num = NL.Num
+local Color = NL.Color
+local Str = NL.Str
+local Icon = NL.Icon
+local Effects = NL.Effects
+local Cache = NL._util.Cache
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §76 · FEATURE REGISTRY · ЦЕНТРАЛЬНЫЙ РЕЕСТР
@@ -10466,25 +10466,25 @@ if not NL or not NL.Features or not NL.GameFeatures then
 end
 
 -- ссылки
-New = NL._util.New
-Round    = NL._util.Round
-Circle   = NL._util.Circle
-Stroke   = NL._util.Stroke
-Gradient = NL._util.Gradient
-Padding  = NL._util.Padding
-HLayout  = NL._util.HLayout
-VLayout  = NL._util.VLayout
-Tween    = NL._util.Tween
-Connect  = NL._util.Connect
-SafeCall = NL._util.SafeCall
-PlaySound = NL._util.PlaySound
+local New = NL._util.New
+local Round = NL._util.Round
+local Circle = NL._util.Circle
+local Stroke = NL._util.Stroke
+local Gradient = NL._util.Gradient
+local Padding = NL._util.Padding
+local HLayout = NL._util.HLayout
+local VLayout = NL._util.VLayout
+local Tween = NL._util.Tween
+local Connect = NL._util.Connect
+local SafeCall = NL._util.SafeCall
+local PlaySound = NL._util.PlaySound
 
-Num    = NL.Num
-Color  = NL.Color
-Str    = NL.Str
-Icon   = NL.Icon
-Effects = NL.Effects
-Cache  = NL._util.Cache
+local Num = NL.Num
+local Color = NL.Color
+local Str = NL.Str
+local Icon = NL.Icon
+local Effects = NL.Effects
+local Cache = NL._util.Cache
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §96 · NOTIFICATION PRIORITY QUEUE
@@ -12214,26 +12214,26 @@ if not NL or not NL.EffectsAdv or not NL.NotifyAdvanced then
 end
 
 -- ссылки
-New = NL._util.New
-Round    = NL._util.Round
-Circle   = NL._util.Circle
-Stroke   = NL._util.Stroke
-Gradient = NL._util.Gradient
-Padding  = NL._util.Padding
-HLayout  = NL._util.HLayout
-VLayout  = NL._util.VLayout
-Tween    = NL._util.Tween
-Connect  = NL._util.Connect
-SafeCall = NL._util.SafeCall
-PlaySound = NL._util.PlaySound
+local New = NL._util.New
+local Round = NL._util.Round
+local Circle = NL._util.Circle
+local Stroke = NL._util.Stroke
+local Gradient = NL._util.Gradient
+local Padding = NL._util.Padding
+local HLayout = NL._util.HLayout
+local VLayout = NL._util.VLayout
+local Tween = NL._util.Tween
+local Connect = NL._util.Connect
+local SafeCall = NL._util.SafeCall
+local PlaySound = NL._util.PlaySound
 
-Num    = NL.Num
-Color  = NL.Color
-Str    = NL.Str
-Icon   = NL.Icon
-Effects = NL.Effects
+local Num = NL.Num
+local Color = NL.Color
+local Str = NL.Str
+local Icon = NL.Icon
+local Effects = NL.Effects
 local EffectsAdv = NL.EffectsAdv
-Cache  = NL._util.Cache
+local Cache = NL._util.Cache
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §120 · LAYOUT MANAGER · ЯДРО
@@ -13698,26 +13698,26 @@ if not NL or not NL.LayoutPolish or not NL.GameFeatures then
 end
 
 -- ссылки
-New = NL._util.New
-Round    = NL._util.Round
-Circle   = NL._util.Circle
-Stroke   = NL._util.Stroke
-Gradient = NL._util.Gradient
-Padding  = NL._util.Padding
-HLayout  = NL._util.HLayout
-VLayout  = NL._util.VLayout
-Tween    = NL._util.Tween
-Connect  = NL._util.Connect
-SafeCall = NL._util.SafeCall
-PlaySound = NL._util.PlaySound
+local New = NL._util.New
+local Round = NL._util.Round
+local Circle = NL._util.Circle
+local Stroke = NL._util.Stroke
+local Gradient = NL._util.Gradient
+local Padding = NL._util.Padding
+local HLayout = NL._util.HLayout
+local VLayout = NL._util.VLayout
+local Tween = NL._util.Tween
+local Connect = NL._util.Connect
+local SafeCall = NL._util.SafeCall
+local PlaySound = NL._util.PlaySound
 
-Num    = NL.Num
-Color  = NL.Color
-Str    = NL.Str
-Icon   = NL.Icon
-Effects = NL.Effects
+local Num = NL.Num
+local Color = NL.Color
+local Str = NL.Str
+local Icon = NL.Icon
+local Effects = NL.Effects
 local EffectsAdv = NL.EffectsAdv
-Cache  = NL._util.Cache
+local Cache = NL._util.Cache
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §141 · UI PRESET SYSTEM · ПОЛНОЕ СОСТОЯНИЕ UI
@@ -15519,26 +15519,26 @@ if not NL or not NL.UIPreset or not NL.Demo then
     error("[NL] Часть 8 не загружена")
 end
 
-New = NL._util.New
-Round    = NL._util.Round
-Circle   = NL._util.Circle
-Stroke   = NL._util.Stroke
-Gradient = NL._util.Gradient
-Padding  = NL._util.Padding
-HLayout  = NL._util.HLayout
-VLayout  = NL._util.VLayout
-Tween    = NL._util.Tween
-Connect  = NL._util.Connect
-SafeCall = NL._util.SafeCall
-PlaySound = NL._util.PlaySound
+local New = NL._util.New
+local Round = NL._util.Round
+local Circle = NL._util.Circle
+local Stroke = NL._util.Stroke
+local Gradient = NL._util.Gradient
+local Padding = NL._util.Padding
+local HLayout = NL._util.HLayout
+local VLayout = NL._util.VLayout
+local Tween = NL._util.Tween
+local Connect = NL._util.Connect
+local SafeCall = NL._util.SafeCall
+local PlaySound = NL._util.PlaySound
 
-Num    = NL.Num
-Color  = NL.Color
-Str    = NL.Str
-Icon   = NL.Icon
-Effects = NL.Effects
+local Num = NL.Num
+local Color = NL.Color
+local Str = NL.Str
+local Icon = NL.Icon
+local Effects = NL.Effects
 local EffectsAdv = NL.EffectsAdv
-Cache  = NL._util.Cache
+local Cache = NL._util.Cache
 
 --// ═══════════════════════════════════════════════════════════════════════
 --//  §161 · COMMAND PALETTE · ЯДРО
